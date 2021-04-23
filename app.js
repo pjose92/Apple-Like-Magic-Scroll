@@ -36,12 +36,10 @@ let delay = 0;
 
 scene.on("update", e => {
   scrollpos = e.scrollPos / 1000;
-  console.log(e);
 });
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
-  console.log(scrollpos, delay);
 
   video.currentTime = delay;
 }, 33.3); //The Video is 30 frames per second so divided 1000 on 30 and got 33.3
