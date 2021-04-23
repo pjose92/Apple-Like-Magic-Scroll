@@ -28,8 +28,7 @@ let scene2 = new ScrollMagic.Scene({
 })
   .setTween(textAnim)
   .addTo(controller);
-//Video Animation
-// change the current frame of the video 
+//Video Animation change the current frame of the video 
 let accelamount = 0.1;
 let scrollpos = 0;
 let delay = 0;
@@ -40,6 +39,5 @@ scene.on("update", e => {
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
-
   video.currentTime = delay;
 }, 33.3); //The Video is 30 frames per second so divided 1000 on 30 and got 33.3
