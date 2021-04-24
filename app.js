@@ -8,11 +8,11 @@ const end = section.querySelector("h1");
 const controller = new ScrollMagic.Controller();
 //Scenes
 let scene = new ScrollMagic.Scene({
-  // how many pixels do I want to scroll  
+  //how many pixels do I want to scroll
   duration: 9000,
-  // when do i want something to trigger 
+  //when do i want something to trigger
   triggerElement: intro,
-  // position you want something to start
+  //position you want something to start
   triggerHook: 0
 })
   .addIndicators()
